@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>Huge Styleguide</title><link rel="stylesheet" href="fonts/Huge/stylesheet.css"><link rel="stylesheet" href="style/vendor/normalize.css"><link rel="stylesheet" href="style/vendor/skeleton.css"><link rel="stylesheet" href="style/main.css"></head><body></body></html><header class="u-cf inner"><div class="bg"></div><div class="wrap"><div class="top"><div class="container"><div class="row"><div class="two columns"><a href="index.html"><img src="images/huge-logo.svg"/></a></div><div class="seven columns u-pull-right"><ul class="menu list-horz list-plain"><li><a href="download.html">Download</a></li><li><a href="start.html">Getting Started</a></li><li><a href="modules.html">Modules</a></li><li><a href="contributing.html">Contributing</a></li></ul></div></div></div></div><div class="container hero"><div class="row"><div class="ten columns center"><h1 class="main-title">Modules</h1></div></div></div></div></header><main class="inner"><div class="image no-margin inner"><div class="container"><img src="images/gif5.gif"></div></div><div id="how-they-work" class="section u-cf inner no-border"><div class="container"><div class="row"><div class="ten columns center"><h2 class="title">How they work</h2><p>The modules functionality is a combination of: </p>
+<!DOCTYPE html><html><head><title>Styleguide</title><link rel="stylesheet" href="fonts/Huge/stylesheet.css"><link rel="stylesheet" href="style/vendor/normalize.css"><link rel="stylesheet" href="style/vendor/skeleton.css"><link rel="stylesheet" href="style/main.css"></head><body></body></html><header class="u-cf inner"><div class="bg"></div><div class="wrap"><div class="top"><div class="container"><div class="row"><div class="two columns"><a href="index.html"><img src="images/huge-logo.svg"/></a></div><div class="seven columns u-pull-right"><ul class="menu list-horz list-plain"><li><a href="download.html">Download</a></li><li><a href="start.html">Getting Started</a></li><li><a href="modules.html">Modules</a></li><li><a href="contributing.html">Contributing</a></li></ul></div></div></div></div><div class="container hero"><div class="row"><div class="ten columns center"><h1 class="main-title">Modules</h1></div></div></div></div></header><main class="inner"><div class="image no-margin inner"><div class="container"><img src="images/gif5.gif"></div></div><div id="how-they-work" class="section u-cf inner no-border"><div class="container"><div class="row"><div class="ten columns center"><h2 class="title">How they work</h2><p>The modules functionality is a combination of: </p>
 <ul>
 <li>Config and content inside the _data.json;</li>
 <li>HTML from .jade files;</li>
@@ -6,21 +6,21 @@
 <li>Folder structure;</li>
 <li>Javascript (optional).</li>
 </ul>
-</div></div></div></div><div class="image no-margin"><div class="container"><img src="images/gif3.gif"></div></div><div id="modules-structure" class="section u-cf inner no-border"><div class="container"><div class="row"><div class="ten columns center"><h2 class="title">Structure</h2><h3>Folders &amp; Files</h3>
-<p>The naming rule is: order + _ + module-id<br>example: 1_introduction</p>
+</div></div></div></div><div class="image no-margin"><div class="container"><img src="images/gif3.gif"></div></div><div id="modules-structure" class="section u-cf inner no-border"><div class="container"><div class="row"><div class="ten columns center"><h2 class="title">Structure</h2><h3>Folders &amp; Files</h3><p>The naming rule is: order + _ + module-id<br>example: 1_introduction</p>
 <p>The modules and menu order derive from this naming rule.</p>
 <p>The .jade and css files must follow the same folder identification:</p>
 <pre><code class="language-markup">Folder: 1_introduction  
         /_introduction.jade  
-        /_introduction.sass</code></pre>
-<h3>_data.json</h3>
-<p>In this file you can set the module and it&#39;s content. The rule is:</p>
+        /_introduction.sass
+</code></pre>
+<h3>_data.json</h3><p>In this file you can set the module and it&#39;s content. The rule is:</p>
 <pre><code class="language-json">{
     &quot;id&quot;: &quot;Unique module id, same name as folder but without the order numbers&quot;,
     &quot;name&quot;: &quot;Module name, shown in menu and module title&quot;,
     &quot;scripts&quot;: [&quot;Javascript file(s) path is optional&quot;],
     &quot;items&quot;: &quot;object, array, ou any type of data that will be held as the modules contents&quot;
-}</code></pre>
+}
+</code></pre>
 <p>Example:</p>
 <pre><code class="language-json">// Folder: 2_colors
 {
@@ -43,11 +43,10 @@
             }
         ]
     }
-}</code></pre>
-<h3>Jade</h3>
-<p>Jade is one of the most simple ways for writing HTML. It allows to use programming logic to write HTML in a smarter way. To learn more, <a href="http://jade-lang.com" target="_blank">click here</a>.</p>
+}
+</code></pre>
+<h3>Jade</h3><p>Jade is one of the most simple ways for writing HTML. It allows to use programming logic to write HTML in a smarter way. To learn more, <a href="http://jade-lang.com" target="_blank">click here</a>.</p>
 <p>All data from the _data.json file will be available to the .jade file as variables.</p>
-<h3>CSS Styles</h3>
-<p>This projects supports SASS, LESS and Stylus. Choose one and use the file with the matching extension.</p>
+<h3>CSS Styles</h3><p>This projects supports SASS, LESS and Stylus. Choose one and use the file with the matching extension.</p>
 <p>The stylesheet of the module will be automatically loaded.</p>
 </div></div></div></div></main><footer><a href="http://hugeinc.com" target="_blank" class="h"></a><p>Make something you love.<sup>TM</sup></p></footer><script src="bundle.js"></script>

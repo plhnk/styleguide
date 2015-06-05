@@ -1,10 +1,10 @@
 <p>1 - You should allow unregistered applications to run in order to use the Start.app file. You can do so in Settings &gt; Security &amp; Privacy</p>
 <p>2 - The compiled offline version have a smaller issue on Chrome. Chrome have a security policy of not allowing communication with iframes under file:// protocol, so any interaction that needs such communication will be removed (basically the sidebar menu). This is only for the offline compiled version.</p>
 <p>3 - If you are a Mac user and after running the Start.app you have this error:</p>
-<pre><code>npm ERR! Please try running this command again as root/Administrator.</code></pre>
-<p>You have probably installed Node with sudo or root permission. You will need to fix permissions to the .npm folder with the following command:</p>
-<pre><code>sudo chown -R $(whoami) ~/.npm</code></pre>
-<p>After that, try running the Start.app again.</p>
+<pre><code>npm ERR! Please try running this command again as root/Administrator.
+</code></pre><p>You have probably installed Node with sudo or root permission. You will need to fix permissions to the .npm folder with the following command:</p>
+<pre><code>sudo chown -R $(whoami) ~/.npm
+</code></pre><p>After that, try running the Start.app again.</p>
 <p>4 - If you have XCode installed but have not agreed with the License you will get this error:</p>
-<pre><code>Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.</code></pre>
-<p>Open XCode and accept the license, then try running Start.app again.</p>
+<pre><code>Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.
+</code></pre><p>Open XCode and accept the license, then try running Start.app again.</p>
