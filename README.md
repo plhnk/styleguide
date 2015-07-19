@@ -1,10 +1,16 @@
-# Huge Styleguide
-  
-####v2.0.0
+# Styleguide
+#### A tool to make creating and maintaining styleguides easy.
+#####v2.0.0
 
-For downloads, how to get started and detailed documentation please refer to the [Huge Styleguide Website](http://hugeinc.github.io/styleguide/)
+For downloads, how to get started and detailed documentation please refer to the [Styleguide Website](http://hugeinc.github.io/styleguide/)
 
-### Know issues
+#### Thanks to
+- [Node.js](http://nodejs.org)
+- [Harp.js](http://harpjs.com)
+- [Node Livereload](https://www.npmjs.com/package/livereload)
+- [Node Watch](https://www.npmjs.com/package/watch)
+
+### Known issues
 1 - You should allow unregistered applications to run in order to use the Start.app file. You can do so in Settings > Security & Privacy
 
 2 - The compiled offline version have a smaller issue on Chrome. Chrome have a security policy of not allowing communication with iframes under file:// protocol, so any interaction that needs such communication will be removed (basically the sidebar menu). This is only for the offline compiled version.
